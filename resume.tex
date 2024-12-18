@@ -1,0 +1,189 @@
+%-------------------------
+% Resume in Latex
+% Author : Dylan Moore
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{0pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\eduSubheading}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} \\
+      \textit{\small#4} & \textit{\small #5} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+\begin{center}
+    \textbf{\Huge \scshape Dylan Moore} \\ \vspace{10pt}
+    \small +1 512 705 0291 $|$ \href{mailto:dylantmoore@icloud.com}{\underline{dylantmoore@icloud.com}} $|$ 
+    \href{https://www.linkedin.com/in/dtm001}{\underline{inkedin.com/in/dtm001}} $|$
+    \href{https://github.com/4ngel5ire}{\underline{github.com/dylanmoore}}
+\end{center}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {General Motors}{Austin, TX}
+        {Software Engineering Team Lead}{Jan. 2023 -- Present}
+        \resumeItemListStart
+           \resumeItem{Hosted regular development practice and design pattern sessions to assist junior development growth.}
+           \resumeItem{Maintained dependency alignment across multiple scrum teams resulting in successful deployments and green project status.}
+           \resumeItem{Lead migration from on-premise kubernetes cluster to 3rd Party cloud providers.}
+           \resumeItem{Designed and created novel integration test framework validating OpenSearch query building logic for critical inventory analytics dashboards.}
+        \resumeItemListEnd 
+
+    \resumeSubSubheading
+    {Senior Software Engineer}{June 2022 -- Present}
+    \resumeItemListStart
+        \resumeItem{Implemented OpenSearch indexing layer in system architecture resulting in 50x application performance gain.}
+       \resumeItem{Proposed, designed and implemented micro frontend architecture to facilitate successful multi-team application development.}
+       \resumeItem{Designed and developed VIP inventory ticket tracking system enabling emergency escalation for brand-critical vehicle deliveries resulting in a 50x decrease in emergency resolution time.}
+    \resumeItemListEnd
+
+    \resumeSubSubheading
+    {Software Engineer}{Sept. 2019 -- June 2022}
+    \resumeItemListStart
+        \resumeItem{Delivered intelligent inventory web application utilizing cloud native technologies resulting in millions of dollars saved annually.}
+        \resumeItem{Aggregated and deployed golden source of product life-cycle data exposed via Kafka publish / subscribe model supporting company wide consumption.}
+        \resumeItem{Created custom service monitors resulting in highly available up-time.}
+    \resumeItemListEnd
+
+
+    \resumeSubheading
+        {Oildex}{Austin, TX}
+        {Software Engineer Intern}{Aug. 2018 -- Jan. 2019}
+        \resumeItemListStart
+           \resumeItem{Developed financial PDF parsing tool enabling automated customer payment recording saving thousands in labor costs per month.}
+           \resumeItem{Traiged and resolved bugs within various parsing libraries resulting in successful project status.}
+        \resumeItemListEnd 
+    
+  \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: TypeScript/JavaScript, Java, Python, Go, C\#, C/C++, SQL} \\
+     \textbf{Frameworks}{: React, NextJS, Node.js, NestJS, Spring, Quarkus, .NET} \\
+     \textbf{Technologies}{: Docker, Kubernetes, OpenSearch/ElasticSearch, Kafka, Redis } \\
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \eduSubheading
+      {Texas State University}{San Marcos, TX}
+      {Bachelor of Arts in Computer Science} {Minor in Applied Mathematics}{Aug. 2014 -- Aug. 2018}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
+
