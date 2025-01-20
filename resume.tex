@@ -1,0 +1,194 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{setspace} % Import needed for line spacing adjustments
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{0pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+    \vspace{2.5mm} % Add vertical space below the overview
+}
+
+\newcommand{\jobOverview}[1]{
+    \vspace*{-1pt} % Add vertical space above the overview
+    \hspace*{1em} % Indent to align with bullet points
+    \parbox[t]{\dimexpr\linewidth-3em}{\setstretch{0.9}\item\small{{#1}}} % Format the overview as italic, reduce line height
+}
+
+\newcommand{\eduSubheading}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4}  \\
+      \textit{\small#5} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+\begin{center}
+    \textbf{\Huge \scshape Dylan Moore} \\ \vspace{10pt}
+    \small 3305 Cherrywood Road Austin, TX. 78752
+    \vspace{3pt} \\
+    \small +1 512 705 0291 $|$ \href{mailto:dylantmoore@icloud.com}{\underline{dylantmoore@icloud.com}} $|$ 
+    \href{https://www.linkedin.com/in/dtm001}{\underline{linkedin.com/in/dtm001}} $|$
+    \href{https://github.com/dtm001}{\underline{github.com/dtm001}}
+\end{center}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {General Motors}{Austin, TX}
+        {Software Engineering Team Lead}{Jan. 2023 -- Present}
+        \jobOverview{Led architecture and development of a unified Inventory Visibility platform, reducing operational overhead by millions through efficient data aggregation, cross-functional collaboration, and streamlined workflows.}
+        \resumeItemListStart
+           \resumeItem{Spearheaded the migration of on-premise Kubernetes clusters to third-party cloud providers, improving scalability and reliability.}
+           \resumeItem{Created an innovative integration test framework for validating OpenSearch query logic, enhancing the accuracy of critical inventory analytics dashboards.}
+           \resumeItem{Conducted regular sessions on development practices and design patterns, fostering junior developers' growth and advancing team technical expertise.}
+           \resumeItem{Ensured dependency alignment across multiple scrum teams, leading to consistent successful deployments and maintaining green project status.}
+        \resumeItemListEnd 
+
+    \resumeSubSubheading
+    {Senior Software Engineer}{June 2022 -- Present}
+    \jobOverview{Designed and implemented high-performance application features, improving efficiency by 50x and saving significant resources through optimized development and issue resolution processes.}
+    \resumeItemListStart
+        \resumeItem{Successfully proposed and developed the integration of an OpenSearch indexing layer, boosting application performance by 50x}
+       \resumeItem{Led the design and implementation of a micro-frontend framework enabling cross-team development, deployment, ownership, and seamless integration.}
+       \resumeItem{Built a VIP inventory ticket tracking system reducing emergency resolution times by 10x and improving critical vehicle delivery.}
+    \resumeItemListEnd
+
+    \resumeSubSubheading
+    {Software Engineer}{Sept. 2019 -- June 2022}
+    \jobOverview{Delivered a company-wide inventory platform, saving millions annually by integrating vehicle life-cycle data into a reliable and scalable "golden source."}
+    \resumeItemListStart
+        \resumeItem{Delivered a cutting-edge, cloud-native inventory web application, saving millions annually replacing off-the-shelf data visualization solutions for business clients.}
+        \resumeItem{Integrated and deployed a golden source of vehicle life-cycle data using a Kafka publish/subscribe model, supporting company-wide data consumption.}
+        \resumeItem{Built custom service monitors that ensured high system availability and up-time reliability.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: TypeScript/JavaScript, Java, Python, Go, C\#, C/C++, SQL} \\
+     \textbf{Frameworks}{: React, NextJS, Node.js, NestJS, Spring, Quarkus, .NET} \\
+     \textbf{Technologies}{: Docker, Kubernetes, OpenSearch/ElasticSearch, Kafka, Redis } \\
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \eduSubheading
+      {Texas State University}{San Marcos, TX}
+      {Bachelor of Arts in Computer Science} {Aug. 2014 -- Aug. 2018} 
+      {Minor in Applied Mathematics}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
+
